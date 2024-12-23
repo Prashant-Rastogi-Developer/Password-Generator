@@ -1,0 +1,73 @@
+/* -------------------------------------------- */
+/* body */
+:root {
+  --gap: 0.75rem;
+  --white: #fffffe;
+  --black: #121212;
+  --transition: all 0.3s ease;
+  --blur: blur(1rem) saturate(180%);
+  --shadow: 0 1px 2px #12121230, inset 1px 2px 3px #fffffe30;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  color: currentColor;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #8487b4;
+  font-family: Arial, sans-serif;
+}
+.base {
+  padding: var(--gap);
+  margin: var(--gap) 0;
+}
+p {
+  color: var(--black);
+}
+/* -------------------------------------------- */
+/* section */
+.base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.base .input-box {
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+  padding: var(--gap);
+  justify-content: center;
+  border-radius: var(--gap);
+  background-color: #fffffe;
+}
+.base .btn-clear {
+  padding: var(--gap);
+  background-color: transparent;
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+.base .input-field {
+  font-size: clamp(1.2rem, 5vw, 3rem);
+}
+.btn {
+  font-weight: 700;
+  padding: var(--gap);
+  border-radius: var(--gap);
+  transition: var(--transition);
+  font-size: clamp(1.2rem, 5vw, 3rem);
+}
+.btn:active {
+  background-color: #aaaeeb;
+}
+/* -------------------------------------------- */

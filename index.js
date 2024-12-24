@@ -32,3 +32,8 @@ generatePasswordBtn.addEventListener(`click`, () => {
   passwordInput.value = createPassword();
 });
 // --------------------------------------------
+function applyPadding(element) {
+  element.style.padding = "var(--gap)";
+  return element;
+}
+applyPadding(passwordInput);

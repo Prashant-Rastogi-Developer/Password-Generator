@@ -47,25 +47,31 @@ p {
   display: flex;
   gap: var(--gap);
   align-items: center;
+  border: 1px solid #444444;
   padding: var(--gap);
   justify-content: center;
-  border-radius: var(--gap);
+  border-radius: 3px;
   background-color: #fffffe;
 }
 .base .btn-clear {
   padding: var(--gap);
   background-color: transparent;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  transition: var(--transition);
+}
+.btn-clear:active {
+  color: #ff0000;
 }
 .base .input-field {
-  font-size: clamp(1.2rem, 5vw, 3rem);
+  /* padding: var(--gap); */
+  font-size: clamp(1rem, 5vw, 1.2rem);
 }
 .btn {
   font-weight: 700;
   padding: var(--gap);
   border-radius: var(--gap);
   transition: var(--transition);
-  font-size: clamp(1.2rem, 5vw, 3rem);
+  font-size: clamp(1rem, 5vw, 2rem);
 }
 .btn:active {
   background-color: #aaaeeb;
